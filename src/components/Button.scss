@@ -1,0 +1,40 @@
+@import "../variables";
+
+.button {
+  padding: $base * 1.5;
+  border: 2px solid #637380;
+  background: white;
+  color: #637380;
+  width: 100px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: $base * 1.2;
+  cursor: pointer;
+
+  &:not(&--loading):hover {
+    background: #637380;
+    color: white;
+  }
+
+  &--small {
+    width: 120px;
+    padding: $base * .75;
+
+    &.button--loading {
+      height: 39px;
+    }
+  }
+
+  &--loading {
+    height: 57px;
+    background: rgba(#637380,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+
+    img {
+      height: 16px;
+    }
+  }
+}

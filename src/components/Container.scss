@@ -1,0 +1,14 @@
+@import "../variables";
+
+.container {
+  width: 500px;
+  border: 1px solid #d6d9dd;
+  border-radius: 3px;
+  box-shadow: 0 1px $base rgba(0,0,0,0.15);
+
+  &__header {
+    font-size: $base * 1.5;
+    padding: $base * 1.5;
+    border-bottom: 1px solid #d6d9dd;
+  }
+}

@@ -1,0 +1,63 @@
+@import "../variables";
+
+.body {
+  &__balances {
+    display: flex;
+    background: #f5f6f6;
+    margin-bottom: $base * 1.5;
+    border-bottom: 1px solid #d6d9dd;
+  }
+
+  &__balance {
+    padding: $base * 1.5;
+    font-size: $base * 2;
+    flex: 0 1 50%;
+
+    &:first-child {
+      border-right: 1px solid #d6d9dd;
+    }
+  }
+
+  &__balance-label {
+    font-size: $base;
+    color: #aaa;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__buttons {
+    padding: $base * 1.5;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -($base / 3);
+
+    .button {
+      margin-right: $base / 3;
+    }
+  }
+
+  &__modal-header {
+    font-size: $base * 1.5;
+    margin-bottom: $base * 1.5;
+  }
+
+  &__modal-input {
+    margin-bottom: $base * 1.5;
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: $base / 4;
+    }
+
+    input {
+      border-radius: 3px;
+      border: 1px solid #d6d9dd;
+      font-size: $base * 1.2;
+      padding: $base / 2;
+      width: 75%;
+    }
+  }
+}
